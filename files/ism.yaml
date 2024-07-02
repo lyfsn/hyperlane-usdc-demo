@@ -1,0 +1,28 @@
+arbitrum:
+  type: staticAggregationIsm
+  modules:
+    - type: messageIdMultisigIsm
+      threshold: 1
+      validators:
+        - "0x18059261d1A3741F231a19D78c40389dA9460603"
+        - "0x9a64EcD021a75a40F7875c6D745ef312aa30FA49"
+    - type: merkleRootMultisigIsm
+      threshold: 1
+      validators:
+        - "0x18059261d1A3741F231a19D78c40389dA9460603"
+        - "0x9a64EcD021a75a40F7875c6D745ef312aa30FA49"
+  threshold: 2
+endurance:
+  type: staticAggregationIsm
+  modules:
+    - type: messageIdMultisigIsm
+      threshold: 1
+      validators:
+        - "0x18059261d1A3741F231a19D78c40389dA9460603"
+        - "0x9a64EcD021a75a40F7875c6D745ef312aa30FA49"
+    - type: merkleRootMultisigIsm
+      threshold: 1
+      validators:
+        - "0x18059261d1A3741F231a19D78c40389dA9460603"
+        - "0x9a64EcD021a75a40F7875c6D745ef312aa30FA49"
+  threshold: 2

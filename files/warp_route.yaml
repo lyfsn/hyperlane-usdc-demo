@@ -1,0 +1,17 @@
+arbitrum:
+  isNft: false
+  type: collateral
+  token: "0xaf88d065e77c8cC2239327C5EDb3A432268e5831"
+  owner: "0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4"
+  mailbox: "0x979Ca5202784112f4738403dBec5D0F3B9daabB9"
+  interchainSecurityModule: "0xf1A65648bB0B92be9AcF6f5478036104e1b7B78d"
+endurance:
+  isNft: false
+  type: synthetic
+  owner: "0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4"
+  mailbox: "0xBEF497cd38A86D2Ec90e57695c3F62E16E3bC5bf"
+  decimals: 6
+  totalSupply: 0
+  symbol: "USDC"
+  name: "USDC"
+  interchainSecurityModule: "0x895978c28df3413C1598d7012F918479C6cd6634"
