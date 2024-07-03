@@ -1,5 +1,6 @@
 wangyu@ubuntu-16gb-hel1-1:~/hyperlane-deployer$ hyperlane warp deploy
 Hyperlane CLI
+? Please enter private key or use the HYP_KEY environment variable. 
 Hyperlane warp route deployment
 ------------------------------------------------
 Using warp route deployment config at ./configs/warp-route-deployment.yaml
@@ -11,7 +12,7 @@ Using token standard ERC20
 ┌───────────┬───────┬──────────────────┬──────────────────────────────────────────────┬──────────────────────────────────────────────┬──────────────────────────────────────────────┬──────────────────────────┐
 │ (index)   │ isNft │ type             │ token                                        │ owner                                        │ mailbox                                      │ interchainSecurityModule │
 ├───────────┼───────┼──────────────────┼──────────────────────────────────────────────┼──────────────────────────────────────────────┼──────────────────────────────────────────────┼──────────────────────────┤
-│ arbitrum  │ false │ 'collateralFiat' │ '0xaf88d065e77c8cC2239327C5EDb3A432268e5831' │ '0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4' │ '0x979Ca5202784112f4738403dBec5D0F3B9daabB9' │ [Object]                 │
+│ arbitrum  │ false │ 'collateralFiat' │ '0xaf88d065e77c8cC2239327C5EDb3A432268e5831' │ '0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4' │ '0x6e783d6C0eFc01B25a4a3275E066dbd98B589572' │ [Object]                 │
 │ endurance │ false │ 'synthetic'      │                                              │ '0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4' │ '0x3e5EC2C305C9C7B98dA695E2C424a33B250A4149' │ [Object]                 │
 └───────────┴───────┴──────────────────┴──────────────────────────────────────────────┴──────────────────────────────────────────────┴──────────────────────────────────────────────┴──────────────────────────┘
 ? Is this deployment plan correct? yes
@@ -22,33 +23,32 @@ Running pre-flight checks for chains...
 All systems ready, captain! Beginning deployment...
 Loading Registry factory addresses
 Loading Registry factory addresses
-Creating staticAggregationIsm Ism for collateralFiat token on arbitrum chain
 Creating staticAggregationIsm Ism for synthetic token on endurance chain
-Pending 0x0f7de301ead95e62ec80541ca7f79ef5d59b6dfc0488676e8e54cce62b0bec13 (waiting 1 blocks for confirmation)
-Finished creating staticAggregationIsm Ism for collateralFiat token on arbitrum chain
+Creating staticAggregationIsm Ism for collateralFiat token on arbitrum chain
 Finished creating staticAggregationIsm Ism for synthetic token on endurance chain
+Finished creating staticAggregationIsm Ism for collateralFiat token on arbitrum chain
 Deploying to arbitrum from https://arbiscan.io/address/0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4
 Deploy proxyAdmin on arbitrum with constructor args ()
-Pending https://arbiscan.io/tx/0xe158bbf46b7225c6bd2a12bcb81cc583fe70c34336fd433f9ce9a03028a02aa1 (waiting 1 blocks for confirmation)
-Deploy HypFiatToken on arbitrum with constructor args (0xaf88d065e77c8cC2239327C5EDb3A432268e5831, 0x979Ca5202784112f4738403dBec5D0F3B9daabB9)
-Pending https://arbiscan.io/tx/0xdb58f606556a0bb7b107d8936f12225268d2c2e0f944c9f4f8d98d5e8fc824c3 (waiting 1 blocks for confirmation)
-Pending https://arbiscan.io/tx/0x42c33b8795386239d688b352c96f18e715dc825a8ebbc272b83d50cc0535e2e5 (waiting 1 blocks for confirmation)
-Deploy TransparentUpgradeableProxy on arbitrum with constructor args (0x9B7a486129C70D4B9bA34783E4C78C4092E41812, 0xC30f3D3446195B7a3ab2e050F1BA621c70e03F05, 0xc0c53b8b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000f1a65648bb0b92be9acf6f5478036104e1b7b78d00000000000000000000000096e82161fbc0a755704d04fd9ebf3ee9099488e4)
-Pending https://arbiscan.io/tx/0xd37a5048fd5e811c87ef6aaa4d19b21cea57b150cabe311b18264a4ff8b39c9a (waiting 1 blocks for confirmation)
+Pending https://arbiscan.io/tx/0x96e76285161b10f1448a24e5af521e4951dac4a36c76d4a1a34b8f9b36151289 (waiting 1 blocks for confirmation)
+Deploy HypFiatToken on arbitrum with constructor args (0xaf88d065e77c8cC2239327C5EDb3A432268e5831, 0x6e783d6C0eFc01B25a4a3275E066dbd98B589572)
+Pending https://arbiscan.io/tx/0x53f996e930e126a58c4e1d418c00cff2a2aa6b2c087d3fb7768b35dc7940fae5 (waiting 1 blocks for confirmation)
+Pending https://arbiscan.io/tx/0x7d2b2a3fdab99065b97fe419c84640588f6ad931259c33576443c8e4e4579f78 (waiting 1 blocks for confirmation)
+Deploy TransparentUpgradeableProxy on arbitrum with constructor args (0x6BF02E9edC73774A7391Fa2aa15786911f9eA894, 0x01290826A690A9B19e87Fb5F32535c69D6E3F8D7, 0xc0c53b8b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000007b2247420216f47e90d44edb2dd1b41c78a7da9b00000000000000000000000096e82161fbc0a755704d04fd9ebf3ee9099488e4)
+Pending https://arbiscan.io/tx/0x9bb03a7043fa8abc7c2277c02b7cd552db1f7f037b3b33370525f2ac61beced4 (waiting 1 blocks for confirmation)
 Successfully deployed contracts on arbitrum
-Deploying to endurance from 0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4
+Deploying to endurance from https://explorer-endurance.fusionist.io/address/0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4
 Deploy proxyAdmin on endurance with constructor args ()
-Pending 0x8b11c296cc66717505d050cbe80f47a924343c0803c7d98a380ae88d36290c67 (waiting 1 blocks for confirmation)
+Pending https://explorer-endurance.fusionist.io/tx/0x72d17f175abea3a62f29e3ab8ff9a6cf8635025414815bcb4e2686639ce036f0 (waiting 1 blocks for confirmation)
 Deploy HypERC20 on endurance with constructor args (6, 0x3e5EC2C305C9C7B98dA695E2C424a33B250A4149)
-Pending 0x0fbd413e910293be2a82e9bcd46e0835113e119e8d11381023f647bc76740520 (waiting 1 blocks for confirmation)
-Pending 0x72c3851ad7622ce2d1a1b7188228f7e50247ece5feb4e051213afac67e952190 (waiting 1 blocks for confirmation)
-Deploy TransparentUpgradeableProxy on endurance with constructor args (0x0696e44cDd454A2773910c8a1c6D6b1AF4A753d0, 0x50C8aaA003cdfb9ac5E3Be69d6E0D07a89A78739, 0xe80a7c79000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c0000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008d97b3cdeaa034dae1cfb97c32859337334024aa00000000000000000000000096e82161fbc0a755704d04fd9ebf3ee9099488e4000000000000000000000000000000000000000000000000000000000000000855534420436f696e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000045553444300000000000000000000000000000000000000000000000000000000)
-Pending 0x051427a28d5c9b7d852be50cfb1f0d94f75f3bb608ceb41b4eac9cbcde73b3d6 (waiting 1 blocks for confirmation)
+Pending https://explorer-endurance.fusionist.io/tx/0xd63473426fedd3a67907aaee7d3f331f888d2185787113e27235bd5fa7fae93b (waiting 1 blocks for confirmation)
+Pending https://explorer-endurance.fusionist.io/tx/0x225ffb4a9c3f32a6ce916426b7456169696a93a330e72350a52b5aaf420fe9fc (waiting 1 blocks for confirmation)
+Deploy TransparentUpgradeableProxy on endurance with constructor args (0x61efCFfd4aFFb6FC466b605A4d77E9b015833b05, 0x3F50a31199afF64525e01579c54B5AA1B1F1B8E2, 0xe80a7c79000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c0000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008d97b3cdeaa034dae1cfb97c32859337334024aa00000000000000000000000096e82161fbc0a755704d04fd9ebf3ee9099488e4000000000000000000000000000000000000000000000000000000000000000855534420436f696e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000045553444300000000000000000000000000000000000000000000000000000000)
+Pending https://explorer-endurance.fusionist.io/tx/0xdc3e35524a7de4565666a569d4d17944366593a41a62b0a937f19f5e2ca99774 (waiting 1 blocks for confirmation)
 Successfully deployed contracts on endurance
-Pending https://arbiscan.io/tx/0x0e50fcb1544f85da5094e84b54c0c86f0327d79baebc400c825c80d8da772f97 (waiting 1 blocks for confirmation)
-Pending 0x3aab89d4316679daeb10de81e63738a4f2e89aac71eb9ba20324bb2514483e3c (waiting 1 blocks for confirmation)
-Pending https://arbiscan.io/tx/0x7ef6d5ca57124c02c1bbe1c2d62cbdcf3a67c483f3d7e6a3799cc51f1c83a055 (waiting 1 blocks for confirmation)
-Pending 0x22ccb1a4cb8aa5f91c902cedbf41133bbfd9d0fc82f4473d0ada90c83fec0e49 (waiting 1 blocks for confirmation)
+Pending https://arbiscan.io/tx/0x6299f8c0982730fe4c4e1fc0984a5fbe846018161934b2e381df70956a90ddd2 (waiting 1 blocks for confirmation)
+Pending https://explorer-endurance.fusionist.io/tx/0x7ced774f4d18c8c796369bb3ae8af9cd4bd6fc8805d7c9d5b949ffe9b8cea841 (waiting 1 blocks for confirmation)
+Pending https://arbiscan.io/tx/0xe044011fb9cdfa0a67c66637507a0d775a650b571a7e39d1945bb5db051b13b2 (waiting 1 blocks for confirmation)
+Pending https://explorer-endurance.fusionist.io/tx/0x6bc01aa6053439998d2a8155c0388ec66b74649eb7a2a8a3ba497083df40ba31 (waiting 1 blocks for confirmation)
 ✅ Warp contract deployments complete
 Writing deployment artifacts...
 Skipping adding warp route at github registry
@@ -65,7 +65,7 @@ Done adding warp route at filesystem registry
         type: collateralFiat
         token: "0xaf88d065e77c8cC2239327C5EDb3A432268e5831"
         owner: "0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4"
-        mailbox: "0x979Ca5202784112f4738403dBec5D0F3B9daabB9"
+        mailbox: "0x6e783d6C0eFc01B25a4a3275E066dbd98B589572"
         interchainSecurityModule:
           type: staticAggregationIsm
           modules:
@@ -80,9 +80,9 @@ Done adding warp route at filesystem registry
               threshold: 1
               type: messageIdMultisigIsm
           threshold: 2
-        addressOrDenom: "0xC6e7949A25cd82e6723C2a37B09F172BB7fb6E1E"
+        addressOrDenom: "0x9403f30CFB5806c1Ae3A274253CC1CEe4700A4AD"
         connections:
-          - token: ethereum|endurance|0xb6Fe8C506Fdd2F81561F3be205cC0EE7745e209e
+          - token: ethereum|endurance|0xAc647Dd0756cc24B41a7f2fF1D9510Ce853055aF
       - chainName: endurance
         standard: EvmHypSynthetic
         name: USD Coin
@@ -107,10 +107,11 @@ Done adding warp route at filesystem registry
               threshold: 1
               type: messageIdMultisigIsm
           threshold: 2
-        addressOrDenom: "0xb6Fe8C506Fdd2F81561F3be205cC0EE7745e209e"
+        addressOrDenom: "0xAc647Dd0756cc24B41a7f2fF1D9510Ce853055aF"
         connections:
-          - token: ethereum|arbitrum|0xC6e7949A25cd82e6723C2a37B09F172BB7fb6E1E
+          - token: ethereum|arbitrum|0x9403f30CFB5806c1Ae3A274253CC1CEe4700A4AD
     
 ⛽️ Gas Usage Statistics
-	- Gas required for warp deploy on arbitrum: 0.00004984452 ETH
-	- Gas required for warp deploy on endurance: 0.007126105533255159 ACE
+	- Gas required for warp deploy on arbitrum: 0.000051039644688 ETH
+	- Gas required for warp deploy on endurance: 0.006963129032494602 ACE
+wangyu@ubuntu-16gb-hel1-1:~/hyperlane-deployer$ 
