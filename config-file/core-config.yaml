@@ -1,0 +1,26 @@
+owner: "0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4"
+defaultIsm:
+  type: staticAggregationIsm
+  modules:
+    - validators:
+        - "0x18059261d1A3741F231a19D78c40389dA9460603"
+        - "0x9a64EcD021a75a40F7875c6D745ef312aa30FA49"
+      threshold: 1
+      type: merkleRootMultisigIsm
+    - validators:
+        - "0x18059261d1A3741F231a19D78c40389dA9460603"
+        - "0x9a64EcD021a75a40F7875c6D745ef312aa30FA49"
+      threshold: 1
+      type: messageIdMultisigIsm
+  threshold: 2
+defaultHook:
+  type: aggregationHook
+  hooks:
+    - type: merkleTreeHook
+    - owner: "0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4"
+      type: protocolFee
+      beneficiary: "0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4"
+      maxProtocolFee: "1000000000000000000"
+      protocolFee: "100000000000000"
+requiredHook:
+  type: merkleTreeHook

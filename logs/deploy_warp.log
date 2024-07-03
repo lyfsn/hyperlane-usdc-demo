@@ -1,0 +1,116 @@
+wangyu@ubuntu-16gb-hel1-1:~/hyperlane-deployer$ hyperlane warp deploy
+Hyperlane CLI
+Hyperlane warp route deployment
+------------------------------------------------
+Using warp route deployment config at ./configs/warp-route-deployment.yaml
+Warp route deployment plan
+
+Deployment plan
+===============
+Using token standard ERC20
+┌───────────┬───────┬──────────────────┬──────────────────────────────────────────────┬──────────────────────────────────────────────┬──────────────────────────────────────────────┬──────────────────────────┐
+│ (index)   │ isNft │ type             │ token                                        │ owner                                        │ mailbox                                      │ interchainSecurityModule │
+├───────────┼───────┼──────────────────┼──────────────────────────────────────────────┼──────────────────────────────────────────────┼──────────────────────────────────────────────┼──────────────────────────┤
+│ arbitrum  │ false │ 'collateralFiat' │ '0xaf88d065e77c8cC2239327C5EDb3A432268e5831' │ '0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4' │ '0x979Ca5202784112f4738403dBec5D0F3B9daabB9' │ [Object]                 │
+│ endurance │ false │ 'synthetic'      │                                              │ '0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4' │ '0x3e5EC2C305C9C7B98dA695E2C424a33B250A4149' │ [Object]                 │
+└───────────┴───────┴──────────────────┴──────────────────────────────────────────────┴──────────────────────────────────────────────┴──────────────────────────────────────────────┴──────────────────────────┘
+? Is this deployment plan correct? yes
+Running pre-flight checks for chains...
+✅ Chains are valid
+✅ Signer is valid
+✅ Balances are sufficient
+All systems ready, captain! Beginning deployment...
+Loading Registry factory addresses
+Loading Registry factory addresses
+Creating staticAggregationIsm Ism for collateralFiat token on arbitrum chain
+Creating staticAggregationIsm Ism for synthetic token on endurance chain
+Pending 0x0f7de301ead95e62ec80541ca7f79ef5d59b6dfc0488676e8e54cce62b0bec13 (waiting 1 blocks for confirmation)
+Finished creating staticAggregationIsm Ism for collateralFiat token on arbitrum chain
+Finished creating staticAggregationIsm Ism for synthetic token on endurance chain
+Deploying to arbitrum from https://arbiscan.io/address/0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4
+Deploy proxyAdmin on arbitrum with constructor args ()
+Pending https://arbiscan.io/tx/0xe158bbf46b7225c6bd2a12bcb81cc583fe70c34336fd433f9ce9a03028a02aa1 (waiting 1 blocks for confirmation)
+Deploy HypFiatToken on arbitrum with constructor args (0xaf88d065e77c8cC2239327C5EDb3A432268e5831, 0x979Ca5202784112f4738403dBec5D0F3B9daabB9)
+Pending https://arbiscan.io/tx/0xdb58f606556a0bb7b107d8936f12225268d2c2e0f944c9f4f8d98d5e8fc824c3 (waiting 1 blocks for confirmation)
+Pending https://arbiscan.io/tx/0x42c33b8795386239d688b352c96f18e715dc825a8ebbc272b83d50cc0535e2e5 (waiting 1 blocks for confirmation)
+Deploy TransparentUpgradeableProxy on arbitrum with constructor args (0x9B7a486129C70D4B9bA34783E4C78C4092E41812, 0xC30f3D3446195B7a3ab2e050F1BA621c70e03F05, 0xc0c53b8b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000f1a65648bb0b92be9acf6f5478036104e1b7b78d00000000000000000000000096e82161fbc0a755704d04fd9ebf3ee9099488e4)
+Pending https://arbiscan.io/tx/0xd37a5048fd5e811c87ef6aaa4d19b21cea57b150cabe311b18264a4ff8b39c9a (waiting 1 blocks for confirmation)
+Successfully deployed contracts on arbitrum
+Deploying to endurance from 0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4
+Deploy proxyAdmin on endurance with constructor args ()
+Pending 0x8b11c296cc66717505d050cbe80f47a924343c0803c7d98a380ae88d36290c67 (waiting 1 blocks for confirmation)
+Deploy HypERC20 on endurance with constructor args (6, 0x3e5EC2C305C9C7B98dA695E2C424a33B250A4149)
+Pending 0x0fbd413e910293be2a82e9bcd46e0835113e119e8d11381023f647bc76740520 (waiting 1 blocks for confirmation)
+Pending 0x72c3851ad7622ce2d1a1b7188228f7e50247ece5feb4e051213afac67e952190 (waiting 1 blocks for confirmation)
+Deploy TransparentUpgradeableProxy on endurance with constructor args (0x0696e44cDd454A2773910c8a1c6D6b1AF4A753d0, 0x50C8aaA003cdfb9ac5E3Be69d6E0D07a89A78739, 0xe80a7c79000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c0000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008d97b3cdeaa034dae1cfb97c32859337334024aa00000000000000000000000096e82161fbc0a755704d04fd9ebf3ee9099488e4000000000000000000000000000000000000000000000000000000000000000855534420436f696e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000045553444300000000000000000000000000000000000000000000000000000000)
+Pending 0x051427a28d5c9b7d852be50cfb1f0d94f75f3bb608ceb41b4eac9cbcde73b3d6 (waiting 1 blocks for confirmation)
+Successfully deployed contracts on endurance
+Pending https://arbiscan.io/tx/0x0e50fcb1544f85da5094e84b54c0c86f0327d79baebc400c825c80d8da772f97 (waiting 1 blocks for confirmation)
+Pending 0x3aab89d4316679daeb10de81e63738a4f2e89aac71eb9ba20324bb2514483e3c (waiting 1 blocks for confirmation)
+Pending https://arbiscan.io/tx/0x7ef6d5ca57124c02c1bbe1c2d62cbdcf3a67c483f3d7e6a3799cc51f1c83a055 (waiting 1 blocks for confirmation)
+Pending 0x22ccb1a4cb8aa5f91c902cedbf41133bbfd9d0fc82f4473d0ada90c83fec0e49 (waiting 1 blocks for confirmation)
+✅ Warp contract deployments complete
+Writing deployment artifacts...
+Skipping adding warp route at github registry
+Now adding warp route at filesystem registry at /home/wangyu/.hyperlane
+Done adding warp route at filesystem registry
+    tokens:
+      - chainName: arbitrum
+        standard: EvmHypCollateral
+        name: USD Coin
+        symbol: USDC
+        decimals: 6
+        totalSupply: 0
+        isNft: false
+        type: collateralFiat
+        token: "0xaf88d065e77c8cC2239327C5EDb3A432268e5831"
+        owner: "0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4"
+        mailbox: "0x979Ca5202784112f4738403dBec5D0F3B9daabB9"
+        interchainSecurityModule:
+          type: staticAggregationIsm
+          modules:
+            - validators:
+                - "0x18059261d1A3741F231a19D78c40389dA9460603"
+                - "0x9a64EcD021a75a40F7875c6D745ef312aa30FA49"
+              threshold: 1
+              type: merkleRootMultisigIsm
+            - validators:
+                - "0x18059261d1A3741F231a19D78c40389dA9460603"
+                - "0x9a64EcD021a75a40F7875c6D745ef312aa30FA49"
+              threshold: 1
+              type: messageIdMultisigIsm
+          threshold: 2
+        addressOrDenom: "0xC6e7949A25cd82e6723C2a37B09F172BB7fb6E1E"
+        connections:
+          - token: ethereum|endurance|0xb6Fe8C506Fdd2F81561F3be205cC0EE7745e209e
+      - chainName: endurance
+        standard: EvmHypSynthetic
+        name: USD Coin
+        symbol: USDC
+        decimals: 6
+        totalSupply: 0
+        isNft: false
+        type: synthetic
+        owner: "0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4"
+        mailbox: "0x3e5EC2C305C9C7B98dA695E2C424a33B250A4149"
+        interchainSecurityModule:
+          type: staticAggregationIsm
+          modules:
+            - validators:
+                - "0x18059261d1A3741F231a19D78c40389dA9460603"
+                - "0x9a64EcD021a75a40F7875c6D745ef312aa30FA49"
+              threshold: 1
+              type: merkleRootMultisigIsm
+            - validators:
+                - "0x18059261d1A3741F231a19D78c40389dA9460603"
+                - "0x9a64EcD021a75a40F7875c6D745ef312aa30FA49"
+              threshold: 1
+              type: messageIdMultisigIsm
+          threshold: 2
+        addressOrDenom: "0xb6Fe8C506Fdd2F81561F3be205cC0EE7745e209e"
+        connections:
+          - token: ethereum|arbitrum|0xC6e7949A25cd82e6723C2a37B09F172BB7fb6E1E
+    
+⛽️ Gas Usage Statistics
+	- Gas required for warp deploy on arbitrum: 0.00004984452 ETH
+	- Gas required for warp deploy on endurance: 0.007126105533255159 ACE

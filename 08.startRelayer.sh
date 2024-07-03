@@ -18,8 +18,7 @@ docker run \
   --defaultSigner.key $RELAYER_KEY \
   --log.level info 
 
-
-
+export LAYER_DB_DIR=/root/hyperlane-deployer/relayer-db-2
 
 
 

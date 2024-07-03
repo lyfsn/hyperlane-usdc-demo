@@ -1,0 +1,91 @@
+wangyu@ubuntu-16gb-hel1-1:~/hyperlane-deployer$ hyperlane core deploy
+Hyperlane CLI
+Hyperlane permissionless deployment
+------------------------------------------------
+? Select chain to connect: endurance
+
+Deployment plan
+===============
+Transaction signer and owner of new contracts: 0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4
+Deploying core contracts to network: endurance
+┌────────────────────────┬───────────────────────────────────────┐
+│ (index)                │ Values                                │
+├────────────────────────┼───────────────────────────────────────┤
+│ Name                   │ 'endurance'                           │
+│ Display Name           │ 'Endurance'                           │
+│ Chain ID               │ 648                                   │
+│ Domain ID              │ 648                                   │
+│ Protocol               │ 'ethereum'                            │
+│ JSON RPC URL           │ 'https://rpc-endurance.fusionist.io/' │
+│ Native Token: Symbol   │ 'ACE'                                 │
+│ Native Token: Name     │ 'ACE'                                 │
+│ Native Token: Decimals │ 18                                    │
+└────────────────────────┴───────────────────────────────────────┘
+Note: There are several contracts required for each chain, but contracts in your provided registries will be skipped.
+? Is this deployment plan correct? yes
+Running pre-flight checks for chains...
+✅ Chains are valid
+✅ Signer is valid
+✅ Balances are sufficient
+All systems ready, captain! Beginning deployment...
+Deploying to endurance from 0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4
+Deploy staticMerkleRootMultisigIsmFactory on endurance with constructor args ()
+Pending 0x44d875f6948473ca9e0d40e340e4b939c7feb85c31edbf60c57a5fdd0fe1e0f4 (waiting 1 blocks for confirmation)
+Deploy staticMessageIdMultisigIsmFactory on endurance with constructor args ()
+Pending 0xb05a4d39d9f3e5fe1c9fa219a95e06f4b23e1f4565f690139455fdfe135250f2 (waiting 1 blocks for confirmation)
+Deploy staticAggregationIsmFactory on endurance with constructor args ()
+Pending 0xe82ebb14e6d7c093acc51f098a92efb81db4f4c8a00a707104500c9577b6775c (waiting 1 blocks for confirmation)
+Deploy staticAggregationHookFactory on endurance with constructor args ()
+Pending 0xde21d75be93dd4969a0f70a52ba1760a1848d138da5f17f00f875480e2d2b448 (waiting 1 blocks for confirmation)
+Deploy domainRoutingIsmFactory on endurance with constructor args ()
+Pending 0xee43d48a12fdfec2f60476ad633578f896b37d0531c12343bcdb76cce06e75b6 (waiting 1 blocks for confirmation)
+Successfully deployed contracts on endurance
+Deploy proxyAdmin on endurance with constructor args ()
+Pending 0xab236b5d4ac140c5dc13da559245612abbefc448bc9eac8ddd2608ae83391358 (waiting 1 blocks for confirmation)
+Deploy mailbox on endurance with constructor args (648)
+Pending 0x2944d31e8437f9727ba411e4e2c5338ea25025a9c6c1a045967046004e8da3b2 (waiting 1 blocks for confirmation)
+Deploy TransparentUpgradeableProxy on endurance with constructor args (0x8d0a86807B04B42Fc032AB036B57A191d313e9bD, 0xF6fB32e86acB47Ea69De0BdcEce30C4c83bF2cA0, 0x)
+Pending 0x001889325dff6280533a6b9bf14d5362d82fc4f734162d5eb366b452f9320dee (waiting 1 blocks for confirmation)
+Pending 0xd48177aa0776f2e5ab8b5d90f5bdacf00c879bbd9099bf0450d7b88117f79e1a (waiting 1 blocks for confirmation)
+Pending 0x4e39a699f4f4923c7dee3af0e59472b97dde7e5dc79128143c69613a76ab5e60 (waiting 1 blocks for confirmation)
+Pending 0x23a1112f3023eb03961834ef6534b28c0f94e7d4a6bde07b082c291a72489557 (waiting 1 blocks for confirmation)
+Deploy merkleTreeHook on endurance with constructor args (0x3e5EC2C305C9C7B98dA695E2C424a33B250A4149)
+Pending 0x5987ec507cede66111c08d388c42045d0574804ba678687a3b174132164ce1b8 (waiting 1 blocks for confirmation)
+Deploy protocolFee on endurance with constructor args (2000000000000000000, 1000000000000000000, 0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4, 0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4)
+Pending 0xc3a3e4ed7ce97e4e450eab339799a87dd3ebd6edb5ecd9bb1d30a1bca04e17e2 (waiting 1 blocks for confirmation)
+Pending 0x84295bce47b87d5d73eb1ecfb54133e7b5293ecfcb1d9efe9b2e553601776d3d (waiting 1 blocks for confirmation)
+Pending 0x36e729653f6ab0fd26c4ad8ec07567115952719434f81a82d82356c25c6e9db6 (waiting 1 blocks for confirmation)
+Deploy interchainAccountIsm on endurance with constructor args (0x3e5EC2C305C9C7B98dA695E2C424a33B250A4149)
+Pending 0x0107a9e4b0fc7687281a61afb58ddcc8f9e5d22a9d281e3572152f04dff493d8 (waiting 1 blocks for confirmation)
+Deploy proxyAdmin on endurance with constructor args ()
+Pending 0xa919326741011682656df15dae8efcf8d30b6ef1b6f33c840a64273285ae4169 (waiting 1 blocks for confirmation)
+Deploy interchainAccountRouter on endurance with constructor args (0x3e5EC2C305C9C7B98dA695E2C424a33B250A4149)
+Pending 0x500be0d5d84a93a25ab6190b8c8b20e45a743a3f7f9649bf5c4948cbe1e6c162 (waiting 1 blocks for confirmation)
+Pending 0x79995aa43739edf9e9082e303ef960746b8fc55739b52db8893f4dc6b4a84a05 (waiting 1 blocks for confirmation)
+Deploy TransparentUpgradeableProxy on endurance with constructor args (0x6a9Ec8F90ba66115BCE1FC37934795dd8D306f99, 0x763e265733ff1eBe1578593aAF940d4fA68ef568, 0xc0c53b8b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000008f8b0fad946c48252d7dd660be8cf516d0c8abd300000000000000000000000096e82161fbc0a755704d04fd9ebf3ee9099488e4)
+Pending 0xa26ff61fa047af2292c8239347b3cfd279add194824f5b7b004dd6233e4c3ece (waiting 1 blocks for confirmation)
+Deploy validatorAnnounce on endurance with constructor args (0x3e5EC2C305C9C7B98dA695E2C424a33B250A4149)
+Pending 0x57d8d5ad840f1a83a92d9a8965a51478c625cc0fb0414be295848036bf979052 (waiting 1 blocks for confirmation)
+Deploy testRecipient on endurance with constructor args ()
+Pending 0x0885b0fc8389e25f974e87fbaefac344eaba12847856fe7248f3e842b823f729 (waiting 1 blocks for confirmation)
+Sent tx 0xd9ed9f881e5c2d1014d6df0d6bfde02f431c8b0446a450e7402d7afa85286579
+Pending 0xd9ed9f881e5c2d1014d6df0d6bfde02f431c8b0446a450e7402d7afa85286579 (waiting 1 blocks for confirmation)
+⛽️ Gas Usage Statistics
+	- Gas required for core deploy on endurance: 0.030700818143270484 ACE
+Skipping updating chain endurance at github registry
+Now updating chain endurance at filesystem registry at /home/wangyu/.hyperlane
+Done updating chain endurance at filesystem registry
+✅ Core contract deployments complete:
+
+    staticMerkleRootMultisigIsmFactory: "0x516195dF89ADaAf3088338a8dc56316166ABd903"
+    staticMessageIdMultisigIsmFactory: "0xb363780814b5b34fC8D1CDE37C206060898F3B52"
+    staticAggregationIsmFactory: "0x2D55f6D280D442d9Ec2E18f18ca421615787374D"
+    staticAggregationHookFactory: "0x47a59613AF0128688aB1C2D5Ce3Bd7B74076Ca22"
+    domainRoutingIsmFactory: "0x6FF4f158c9cc15A5150eD86E1Dd05E2dDCc9918b"
+    proxyAdmin: "0xF6fB32e86acB47Ea69De0BdcEce30C4c83bF2cA0"
+    mailbox: "0x3e5EC2C305C9C7B98dA695E2C424a33B250A4149"
+    interchainAccountRouter: "0x99F63cEA7C57a446C6a66d2B7dFdc18967644def"
+    interchainAccountIsm: "0x8F8B0Fad946c48252d7DD660Be8CF516D0c8abd3"
+    validatorAnnounce: "0x62926506C0529804DB22D446C9011D1D9D9EDd31"
+    testRecipient: "0xa4Ab0C0ed7342dab5090B28D579C01358998f3f0"
+    

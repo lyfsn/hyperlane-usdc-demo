@@ -32,7 +32,7 @@ cast send 0x5052DB3c3886597Ace94aa78bf2729b9a5d4D0fC \
 
 
 ## test recipient (aggr)
-cast call 0x1E528108644aAD0aa4231c0F92e6FfC1cD0F75Fa \
+cast call 0xa4Ab0C0ed7342dab5090B28D579C01358998f3f0 \
   --rpc-url http://44.221.215.226/ \
   "interchainSecurityModule()"
 

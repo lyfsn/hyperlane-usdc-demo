@@ -1,0 +1,39 @@
+arbitrum:
+  isNft: false
+  type: collateralFiat
+  token: "0xaf88d065e77c8cC2239327C5EDb3A432268e5831"
+  owner: "0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4"
+  mailbox: "0x979Ca5202784112f4738403dBec5D0F3B9daabB9"
+  interchainSecurityModule:
+    type: staticAggregationIsm
+    modules:
+      - validators:
+          - "0x18059261d1A3741F231a19D78c40389dA9460603"
+          - "0x9a64EcD021a75a40F7875c6D745ef312aa30FA49"
+        threshold: 1
+        type: merkleRootMultisigIsm
+      - validators:
+          - "0x18059261d1A3741F231a19D78c40389dA9460603"
+          - "0x9a64EcD021a75a40F7875c6D745ef312aa30FA49"
+        threshold: 1
+        type: messageIdMultisigIsm
+    threshold: 2
+endurance:
+  isNft: false
+  type: synthetic
+  owner: "0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4"
+  mailbox: "0x3e5EC2C305C9C7B98dA695E2C424a33B250A4149"
+  interchainSecurityModule:
+    type: staticAggregationIsm
+    modules:
+      - validators:
+          - "0x18059261d1A3741F231a19D78c40389dA9460603"
+          - "0x9a64EcD021a75a40F7875c6D745ef312aa30FA49"
+        threshold: 1
+        type: merkleRootMultisigIsm
+      - validators:
+          - "0x18059261d1A3741F231a19D78c40389dA9460603"
+          - "0x9a64EcD021a75a40F7875c6D745ef312aa30FA49"
+        threshold: 1
+        type: messageIdMultisigIsm
+    threshold: 2
