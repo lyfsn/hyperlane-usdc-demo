@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../schema.json
+tokens:
+  - chainName: arbitrum
+    standard: EvmHypCollateral
+    name: USD Coin
+    symbol: USDC
+    decimals: 6
+    totalSupply: 0
+    isNft: false
+    type: collateral
+    token: "0xaf88d065e77c8cC2239327C5EDb3A432268e5831"
+    owner: "0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4"
+    mailbox: "0x6e783d6C0eFc01B25a4a3275E066dbd98B589572"
+    interchainSecurityModule:
+      type: staticAggregationIsm
+      modules:
+        - validators:
+            - "0x18059261d1A3741F231a19D78c40389dA9460603"
+            - "0x9a64EcD021a75a40F7875c6D745ef312aa30FA49"
+          threshold: 1
+          type: merkleRootMultisigIsm
+        - validators:
+            - "0x18059261d1A3741F231a19D78c40389dA9460603"
+            - "0x9a64EcD021a75a40F7875c6D745ef312aa30FA49"
+          threshold: 1
+          type: messageIdMultisigIsm
+      threshold: 2
+    addressOrDenom: "0xE98BE8cBcc330C01956462bbAC1F4e77E006f23a"
+    collateralAddressOrDenom: "0xaf88d065e77c8cC2239327C5EDb3A432268e5831"
+    connections:
+      - token: ethereum|endurance|0xfE9937cD4f712fC81Eb89A018A7F2786B14E599f
+  - chainName: endurance
+    standard: EvmHypSynthetic
+    name: USD Coin
+    symbol: USDC
+    decimals: 6
+    totalSupply: 0
+    isNft: false
+    type: synthetic
+    owner: "0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4"
+    mailbox: "0x3e5EC2C305C9C7B98dA695E2C424a33B250A4149"
+    interchainSecurityModule:
+      type: staticAggregationIsm
+      modules:
+        - validators:
+            - "0x18059261d1A3741F231a19D78c40389dA9460603"
+            - "0x9a64EcD021a75a40F7875c6D745ef312aa30FA49"
+          threshold: 1
+          type: merkleRootMultisigIsm
+        - validators:
+            - "0x18059261d1A3741F231a19D78c40389dA9460603"
+            - "0x9a64EcD021a75a40F7875c6D745ef312aa30FA49"
+          threshold: 1
+          type: messageIdMultisigIsm
+      threshold: 2
+    addressOrDenom: "0xfE9937cD4f712fC81Eb89A018A7F2786B14E599f"
+    connections:
+      - token: ethereum|arbitrum|0xE98BE8cBcc330C01956462bbAC1F4e77E006f23a
