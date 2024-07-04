@@ -1,0 +1,92 @@
+angyu@ubuntu-16gb-hel1-1:~/hyperlane-deployer$ hyperlane core deploy
+Hyperlane CLI
+? Please enter private key or use the HYP_KEY environment variable. 
+Hyperlane permissionless deployment
+------------------------------------------------
+? Select chain to connect: optimism
+
+Deployment plan
+===============
+Transaction signer and owner of new contracts: 0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4
+Deploying core contracts to network: optimism
+┌────────────────────────┬───────────────────────────────┐
+│ (index)                │ Values                        │
+├────────────────────────┼───────────────────────────────┤
+│ Name                   │ 'optimism'                    │
+│ Display Name           │ 'Optimism'                    │
+│ Chain ID               │ 10                            │
+│ Domain ID              │ 10                            │
+│ Protocol               │ 'ethereum'                    │
+│ JSON RPC URL           │ 'https://mainnet.optimism.io' │
+│ Native Token: Symbol   │ 'ETH'                         │
+│ Native Token: Name     │ 'Ether'                       │
+│ Native Token: Decimals │ 18                            │
+└────────────────────────┴───────────────────────────────┘
+Note: There are several contracts required for each chain, but contracts in your provided registries will be skipped.
+? Is this deployment plan correct? yes
+Running pre-flight checks for chains...
+✅ Chains are valid
+✅ Signer is valid
+✅ Balances are sufficient
+All systems ready, captain! Beginning deployment...
+Deploying to optimism from https://optimistic.etherscan.io/address/0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4
+Deploy staticMerkleRootMultisigIsmFactory on optimism with constructor args ()
+Pending https://optimistic.etherscan.io/tx/0xf907c2c37aa7efa12c41717373487b3f66c0d90f7cff1b2fa166a5f492cb1b5d (waiting 1 blocks for confirmation)
+Deploy staticMessageIdMultisigIsmFactory on optimism with constructor args ()
+Pending https://optimistic.etherscan.io/tx/0xc71606495a2267e84970729acd81dad5a486da744aa417796210de3bd0e3bcf4 (waiting 1 blocks for confirmation)
+Deploy staticAggregationIsmFactory on optimism with constructor args ()
+Pending https://optimistic.etherscan.io/tx/0x71b49e2056b53a27f4631d9256b539145ee419860df1c6068d7f91409f91e412 (waiting 1 blocks for confirmation)
+Deploy staticAggregationHookFactory on optimism with constructor args ()
+Pending https://optimistic.etherscan.io/tx/0x6ff84a821bcaae207d5172780964c41e31ffe8011964ef5b2b511771908e2132 (waiting 1 blocks for confirmation)
+Deploy domainRoutingIsmFactory on optimism with constructor args ()
+Pending https://optimistic.etherscan.io/tx/0x00fd995aca15af73fd419a0208dde2af263bbb4f8b2932d2bd193e5efa8fe9c6 (waiting 1 blocks for confirmation)
+Successfully deployed contracts on optimism
+Deploy proxyAdmin on optimism with constructor args ()
+Pending https://optimistic.etherscan.io/tx/0xdc9e309300fe1a8581ea4eca68b98fcb2b4584d54b583ca262c3cefce6d03e25 (waiting 1 blocks for confirmation)
+Deploy mailbox on optimism with constructor args (10)
+Pending https://optimistic.etherscan.io/tx/0x00e05d39b73092b5bc4447b3ed9f6e85efed7ae86e6783934fff0c2f4f23c07f (waiting 1 blocks for confirmation)
+Deploy TransparentUpgradeableProxy on optimism with constructor args (0xc7Eb42B14b0A0ba25360942AEf7a71b906eEb1D7, 0xB8C44c475707B48Cd0C6F0933790B64c33a0230b, 0x)
+Pending https://optimistic.etherscan.io/tx/0x724a69ea476ee617791a5761ec3f3e9645eab30159844c01bc2ec06514c8237f (waiting 1 blocks for confirmation)
+Pending https://optimistic.etherscan.io/tx/0xe014c4e548f718f6a116432691fcc9deb0df49c573e4af9327ab3af7625eaf58 (waiting 1 blocks for confirmation)
+Pending https://optimistic.etherscan.io/tx/0x12e306b269b6a20c6869bd22bea0cbecc9456f845005d0a713833e0bbed0cfee (waiting 1 blocks for confirmation)
+Pending https://optimistic.etherscan.io/tx/0x3f0ecbe1957eb2d7f36dadcd10f7734c21293ad4f7dda0d54c03d1568d35dee1 (waiting 1 blocks for confirmation)
+Deploy merkleTreeHook on optimism with constructor args (0x9706c71096Ba4EC0C877997F3BE574B02B643510)
+Pending https://optimistic.etherscan.io/tx/0x65743b80d8034925fb08d7ce55002b95e67ceb8b2c8ffac1e7c000175c688e19 (waiting 1 blocks for confirmation)
+Deploy protocolFee on optimism with constructor args (1000000000000000000, 10000000000000, 0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4, 0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4)
+Pending https://optimistic.etherscan.io/tx/0x553dc6d2c1a6c4092bef33afc7212122ced243505acbba2bfd6180baf33ccf31 (waiting 1 blocks for confirmation)
+Pending https://optimistic.etherscan.io/tx/0x31e47b055ff901e9752d900d80b62c3e2fad878243fdbabf4f5f24ff50748492 (waiting 1 blocks for confirmation)
+Pending https://optimistic.etherscan.io/tx/0x64dbf02c977a0b70a267f7d208218db73c67b2d6ddf30fd7308fb43d0537fa6c (waiting 1 blocks for confirmation)
+Deploy interchainAccountIsm on optimism with constructor args (0x9706c71096Ba4EC0C877997F3BE574B02B643510)
+Pending https://optimistic.etherscan.io/tx/0xaed6474a8a73a7176941b39bf9e4868f0dcd165440719f97d6906d4ebe0d170b (waiting 1 blocks for confirmation)
+Deploy proxyAdmin on optimism with constructor args ()
+Pending https://optimistic.etherscan.io/tx/0x9d04c13ed6b4b8e1be819dc08adb025813be20771555c9701e56ef209733a996 (waiting 1 blocks for confirmation)
+Deploy interchainAccountRouter on optimism with constructor args (0x9706c71096Ba4EC0C877997F3BE574B02B643510)
+Pending https://optimistic.etherscan.io/tx/0x91bd9b1be02b002572fcba50884aada027316be6a599d1e64cd8a3de84a50286 (waiting 1 blocks for confirmation)
+Pending https://optimistic.etherscan.io/tx/0x9aa1083ed78e8354af058c0c371275d4e89aa64d6d48d45984e096acd5169d2c (waiting 1 blocks for confirmation)
+Deploy TransparentUpgradeableProxy on optimism with constructor args (0xCa71761adA2Ae356b79b5b003cc6c8Ec4C658b19, 0x06C4Cad9030fA336f676e0f1f8a50744655E6CC4, 0xc0c53b8b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000007572054cc45082bef92e3b9233a4221300c5f3d400000000000000000000000096e82161fbc0a755704d04fd9ebf3ee9099488e4)
+Pending https://optimistic.etherscan.io/tx/0x8046e532ee19aaad9deb5f8a814f0d75ba51162f8349a8b40dc5c39211d93ed0 (waiting 1 blocks for confirmation)
+Deploy validatorAnnounce on optimism with constructor args (0x9706c71096Ba4EC0C877997F3BE574B02B643510)
+Pending https://optimistic.etherscan.io/tx/0xb5b9773b7c4c3d0a6f94d0088ccf0e50480cd196616b7780b6964aa7448e2123 (waiting 1 blocks for confirmation)
+Deploy testRecipient on optimism with constructor args ()
+Pending https://optimistic.etherscan.io/tx/0x9e0b20233b677f1edd9d7b40d2af6bb1c3ed151c824c816c3460962d56534ef9 (waiting 1 blocks for confirmation)
+Sent tx 0x231e14c786acd7f3844d71920ce3f6a53f8d9306bd93245098ea47ff090261dc
+Pending https://optimistic.etherscan.io/tx/0x231e14c786acd7f3844d71920ce3f6a53f8d9306bd93245098ea47ff090261dc (waiting 1 blocks for confirmation)
+⛽️ Gas Usage Statistics
+	- Gas required for core deploy on optimism: 0.001252752164957033 ETH
+Skipping updating chain optimism at github registry
+Now updating chain optimism at filesystem registry at /home/wangyu/.hyperlane
+Done updating chain optimism at filesystem registry
+✅ Core contract deployments complete:
+
+    staticMerkleRootMultisigIsmFactory: "0x5452134B14c5133a1C8678d4DEa128de5e2AF2fE"
+    staticMessageIdMultisigIsmFactory: "0x1e8BCD07eA3a2C7BFF4535185623B044595E1CD9"
+    staticAggregationIsmFactory: "0x5Eb3062841Fa5D4Bbac6D32300202F829253C217"
+    staticAggregationHookFactory: "0x677f8ED7C5F30df45bc696F8308F2cEDA245A570"
+    domainRoutingIsmFactory: "0x21A7C1B13B52c44F377Ba8dAdfCaF13Aec4c85B3"
+    proxyAdmin: "0xB8C44c475707B48Cd0C6F0933790B64c33a0230b"
+    mailbox: "0x9706c71096Ba4EC0C877997F3BE574B02B643510"
+    interchainAccountRouter: "0xF64C58De7375C32946C1F1b5c52750b8cb9A2277"
+    interchainAccountIsm: "0x7572054CC45082BEf92E3B9233A4221300c5f3D4"
+    validatorAnnounce: "0x6337C57B5935000dD2e9605EeC809A274D0b7ae8"
+    testRecipient: "0xBa510C2B0682aF40132f732b15A93FFD89Eb5aEf"
+    

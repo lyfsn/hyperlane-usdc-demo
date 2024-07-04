@@ -1,0 +1,20 @@
+optimism:
+  interchainSecurityModule:
+    modules:
+      - threshold: 1
+        type: merkleRootMultisigIsm
+        validators:
+          - "0x18059261d1A3741F231a19D78c40389dA9460603"
+          - "0x9a64EcD021a75a40F7875c6D745ef312aa30FA49"
+      - threshold: 1
+        type: messageIdMultisigIsm
+        validators:
+          - "0x18059261d1A3741F231a19D78c40389dA9460603"
+          - "0x9a64EcD021a75a40F7875c6D745ef312aa30FA49"
+    threshold: 2
+    type: staticAggregationIsm
+  isNft: false
+  mailbox: "0x9706c71096Ba4EC0C877997F3BE574B02B643510"
+  owner: "0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4"
+  token: "0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85"
+  type: collateral
