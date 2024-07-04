@@ -84,6 +84,59 @@
       "messageIdMultisigIsm": "0xeE1f95078cD13e6C140D25a0f5D24d9e96596e3D",
       "merkleRootMultisigIsm": "0xcf0Bf836DeB9de3d65F18a433A4C78AeECf8eD05",
       "customHook": "0x7bca02239241F34d09160363eFaAcaC30B78f894"
+    },
+    "optimism": {
+      "blockExplorers": [
+        {
+          "apiUrl": "https://optimistic.etherscan.io/api",
+          "family": "etherscan",
+          "name": "OP Mainnet",
+          "url": "https://optimistic.etherscan.io/"
+        }
+      ],
+      "blocks": {
+        "confirmations": 1,
+        "estimateBlockTime": 3,
+        "reorgPeriod": 0
+      },
+      "chainId": 10,
+      "displayName": "Optimism",
+      "domainId": 10,
+      "gasCurrencyCoinGeckoId": "ethereum",
+      "index": {
+        "from": 122236938
+      },
+      "name": "optimism",
+      "nativeToken": {
+        "decimals": 18,
+        "name": "Ether",
+        "symbol": "ETH"
+      },
+      "protocol": "ethereum",
+      "rpcUrls": [
+        {
+          "http": "https://optimism.blockpi.network/v1/rpc/***"
+        }
+      ],
+      "aggregationHook": "0x0b31a984117dF0114c782e03832a662B57DCC068",
+      "domainRoutingIsmFactory": "0x21A7C1B13B52c44F377Ba8dAdfCaF13Aec4c85B3",
+      "interchainAccountIsm": "0x7572054CC45082BEf92E3B9233A4221300c5f3D4",
+      "interchainAccountRouter": "0xF64C58De7375C32946C1F1b5c52750b8cb9A2277",
+      "interchainSecurityModule": "0x6C99646f5C0be0e8D84248813d3faD59B2Ef05b2",
+      "mailbox": "0x9706c71096Ba4EC0C877997F3BE574B02B643510",
+      "merkleTreeHook": "0x4d9ac0055f1af50654d5a94b1c31a109432bf2e9",
+      "protocolFee": "0xbff63067787dfa9741c78ef4676733c08d98d94e",
+      "proxyAdmin": "0xB8C44c475707B48Cd0C6F0933790B64c33a0230b",
+      "staticAggregationHookFactory": "0x677f8ED7C5F30df45bc696F8308F2cEDA245A570",
+      "staticAggregationIsm": "0x6C99646f5C0be0e8D84248813d3faD59B2Ef05b2",
+      "staticAggregationIsmFactory": "0x5Eb3062841Fa5D4Bbac6D32300202F829253C217",
+      "staticMerkleRootMultisigIsmFactory": "0x5452134B14c5133a1C8678d4DEa128de5e2AF2fE",
+      "staticMessageIdMultisigIsmFactory": "0x1e8BCD07eA3a2C7BFF4535185623B044595E1CD9",
+      "testRecipient": "0xBa510C2B0682aF40132f732b15A93FFD89Eb5aEf",
+      "validatorAnnounce": "0x6337C57B5935000dD2e9605EeC809A274D0b7ae8",
+      "messageIdMultisigIsm": "0x83E88C9052FC88980edb06bBfEaA59d5D135345e",
+      "merkleRootMultisigIsm": "0x21cD9DEaDa908202455A70a43ae7E90D62D9a020",
+      "customHook": "0x4d9ac0055f1af50654d5a94b1c31a109432bf2e9"
     }
   },
   "defaultRpcConsensusType": "fallback"
