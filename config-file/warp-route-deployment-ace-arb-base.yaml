@@ -1,0 +1,60 @@
+arbitrum:
+  interchainSecurityModule:
+    modules:
+      - threshold: 1
+        type: merkleRootMultisigIsm
+        validators:
+          - "0x18059261d1A3741F231a19D78c40389dA9460603"
+          - "0x9a64EcD021a75a40F7875c6D745ef312aa30FA49"
+      - threshold: 1
+        type: messageIdMultisigIsm
+        validators:
+          - "0x18059261d1A3741F231a19D78c40389dA9460603"
+          - "0x9a64EcD021a75a40F7875c6D745ef312aa30FA49"
+    threshold: 2
+    type: staticAggregationIsm
+  isNft: false
+  mailbox: "0x979Ca5202784112f4738403dBec5D0F3B9daabB9"
+  owner: "0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4"
+  token: "0xaf88d065e77c8cC2239327C5EDb3A432268e5831"
+  type: collateral
+base:
+  interchainSecurityModule:
+    modules:
+      - threshold: 1
+        type: merkleRootMultisigIsm
+        validators:
+          - "0x18059261d1A3741F231a19D78c40389dA9460603"
+          - "0x9a64EcD021a75a40F7875c6D745ef312aa30FA49"
+      - threshold: 1
+        type: messageIdMultisigIsm
+        validators:
+          - "0x18059261d1A3741F231a19D78c40389dA9460603"
+          - "0x9a64EcD021a75a40F7875c6D745ef312aa30FA49"
+    threshold: 2
+    type: staticAggregationIsm
+  isNft: false
+  mailbox: "0xeA87ae93Fa0019a82A727bfd3eBd1cFCa8f64f1D"
+  owner: "0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4"
+  token: "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+  type: collateral
+endurance:
+  interchainSecurityModule:
+    modules:
+      - threshold: 1
+        type: merkleRootMultisigIsm
+        validators:
+          - "0x18059261d1A3741F231a19D78c40389dA9460603"
+          - "0x9a64EcD021a75a40F7875c6D745ef312aa30FA49"
+      - threshold: 1
+        type: messageIdMultisigIsm
+        validators:
+          - "0x18059261d1A3741F231a19D78c40389dA9460603"
+          - "0x9a64EcD021a75a40F7875c6D745ef312aa30FA49"
+    threshold: 2
+    type: staticAggregationIsm
+  isNft: false
+  mailbox: "0x3e5EC2C305C9C7B98dA695E2C424a33B250A4149"
+  owner: "0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4"
+  type: synthetic
+

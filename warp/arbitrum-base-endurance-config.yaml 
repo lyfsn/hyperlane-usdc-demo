@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=../schema.json
+tokens:
+  - chainName: arbitrum
+    standard: EvmHypCollateral
+    decimals: 6
+    symbol: USDC
+    name: USD Coin
+    addressOrDenom: "0x6Ff15F8dECFe909284b8313F348A211431038fCd"
+    collateralAddressOrDenom: "0xaf88d065e77c8cC2239327C5EDb3A432268e5831"
+    connections:
+      - token: ethereum|base|0xB2Ca7A046eaBF5AeadcB8A2cD9f19295EA2Dc5d5
+      - token: ethereum|endurance|0xBCfB0F338f75F1048dfeAE17333DF0daDC693da2
+  - chainName: base
+    standard: EvmHypCollateral
+    decimals: 6
+    symbol: USDC
+    name: USD Coin
+    addressOrDenom: "0xB2Ca7A046eaBF5AeadcB8A2cD9f19295EA2Dc5d5"
+    collateralAddressOrDenom: "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+    connections:
+      - token: ethereum|arbitrum|0x6Ff15F8dECFe909284b8313F348A211431038fCd
+      - token: ethereum|endurance|0xBCfB0F338f75F1048dfeAE17333DF0daDC693da2
+  - chainName: endurance
+    standard: EvmHypSynthetic
+    decimals: 6
+    symbol: USDC
+    name: USD Coin
+    addressOrDenom: "0xBCfB0F338f75F1048dfeAE17333DF0daDC693da2"
+    connections:
+      - token: ethereum|arbitrum|0x6Ff15F8dECFe909284b8313F348A211431038fCd
+      - token: ethereum|base|0xB2Ca7A046eaBF5AeadcB8A2cD9f19295EA2Dc5d5

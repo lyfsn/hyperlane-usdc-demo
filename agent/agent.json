@@ -1,0 +1,49 @@
+{
+  "chains": {
+    "endurance": {
+      "name": "endurance",
+      "chainId": 648,
+      "domainId": 648,
+      "protocol": "ethereum",
+      "rpcUrls": [
+        {
+          "http": "https://rpc-endurance.fusionist.io/"
+        }
+      ],
+      "staticMerkleRootMultisigIsmFactory": "0x516195dF89ADaAf3088338a8dc56316166ABd903",
+      "staticMessageIdMultisigIsmFactory": "0xb363780814b5b34fC8D1CDE37C206060898F3B52",
+      "staticAggregationIsmFactory": "0x2D55f6D280D442d9Ec2E18f18ca421615787374D",
+      "staticAggregationHookFactory": "0x47a59613AF0128688aB1C2D5Ce3Bd7B74076Ca22",
+      "domainRoutingIsmFactory": "0x6FF4f158c9cc15A5150eD86E1Dd05E2dDCc9918b",
+      "interchainSecurityModule": "0x4b7869F2371F45797761cA247248Ea34717A172B",
+      "messageIdMultisigIsm": "0x09dd2f8c3dc24d7B92925f4a942f6ca2d8F59706",
+      "merkleRootMultisigIsm": "0x9b5AdFE3787D62d65bD876D2c6d5E522f9a37274",
+      "staticAggregationIsm": "0x4b7869F2371F45797761cA247248Ea34717A172B",
+      "merkleTreeHook": "0x92C85ad03A4a9092882A88D993322c19908849CB",
+      "protocolFee": "0x44AC6029537E850BBfA4F83acBf09aff1A0ba75e",
+      "testRecipient": "0xa4Ab0C0ed7342dab5090B28D579C01358998f3f0",
+      "mailbox": "0x3e5EC2C305C9C7B98dA695E2C424a33B250A4149",
+      "proxyAdmin": "0xF6fB32e86acB47Ea69De0BdcEce30C4c83bF2cA0",
+      "validatorAnnounce": "0x62926506C0529804DB22D446C9011D1D9D9EDd31",
+      "interchainGasPaymaster": "0x0000000000000000000000000000000000000000",
+      "index": {
+        "from": 866153
+      }
+    },
+    "arbitrum": {
+      "rpcUrls": [
+        {
+          "http": "https://open-platform.nodereal.io/-/arbitrum-nitro/"
+        }
+      ]
+    },
+    "base": {
+      "rpcUrls": [
+        {
+          "http": "https://open-platform.nodereal.io/-/base/"
+        }
+      ]
+    }
+  },
+  "defaultRpcConsensusType": "fallback"
+}

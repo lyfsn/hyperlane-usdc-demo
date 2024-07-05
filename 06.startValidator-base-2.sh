@@ -1,30 +1,34 @@
 
 
 export CONFIG_FILES=/root/hyperlane-deployer/agent.json
-export VALIDATOR_DB_DIR=/root/hyperlane-deployer/validator-ace-2
+export VALIDATOR_DB_DIR=/root/hyperlane-deployer/validator-base-2
 
 docker run \
   -it \
   -d \
   -u root \
-  --name validator-ace-2 \
+  --name validator-base-2 \
   -e AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID \
   -e AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY \
   -e AWS_REGION=$AWS_REGION \
   -e AWS_BUCKET=$AWS_BUCKET \
-  -e VALIDATOR_KEY=$VALIDATOR_KEY_ACE_2 \
+  -e VALIDATOR_KEY=$VALIDATOR_KEY_BASE_2 \
   -e CONFIG_FILES=/config/agent-config.json \
   --mount type=bind,source=$CONFIG_FILES,target=/config/agent-config.json,readonly \
   --mount type=bind,source=$VALIDATOR_DB_DIR,target=/hyperlane_db \
   gcr.io/abacus-labs-dev/hyperlane-agent:main \
   ./validator \
   --db /hyperlane_db \
-  --originChainName endurance \
+  --originChainName base \
   --checkpointSyncer.type s3 \
   --checkpointSyncer.bucket $AWS_BUCKET \
   --checkpointSyncer.region $AWS_REGION \
-  --checkpointSyncer.folder ace-2 \
+  --checkpointSyncer.folder base-2 \
   --validator.region $AWS_REGION \
   --validator.type aws \
   --validator.id "alias/hyperlane-validator-signer-a2-devnet" \
-  --chains.endurance.blocks.reorgPeriod 1
+  --chains.base.blocks.reorgPeriod 1 
+
+
+
+

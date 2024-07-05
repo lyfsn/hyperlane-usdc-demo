@@ -1,4 +1,7 @@
 .env
 stopAgent.sh
 agent_self.json
+agent_self_new.json
+agent_arb_ace.json
+agent_ace_*.json
 util

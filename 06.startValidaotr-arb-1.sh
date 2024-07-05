@@ -1,7 +1,7 @@
 
 
 export CONFIG_FILES=/root/hyperlane-deployer/agent.json
-export VALIDATOR_DB_DIR=/root/hyperlane-deployer/validator-db-arb-1
+export VALIDATOR_DB_DIR=/root/hyperlane-deployer/validator-arb-1
 
 docker run \
   -it \
