@@ -57,4 +57,5 @@ endurance:
   mailbox: "0x3e5EC2C305C9C7B98dA695E2C424a33B250A4149"
   owner: "0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4"
   type: synthetic
+  interchainGasPaymaster: "0xE2e597ef7F096A9F47138486f4e009Ebe1816663"
 

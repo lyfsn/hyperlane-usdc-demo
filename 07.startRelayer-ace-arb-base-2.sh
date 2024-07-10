@@ -1,13 +1,13 @@
 
 
 export CONFIG_FILES=/root/hyperlane-deployer/agent.json
-export LAYER_DB_DIR=/root/hyperlane-deployer/relayer
+export LAYER_DB_DIR=/root/hyperlane-deployer/relayer-2
 
 docker run \
   -it \
   -d \
   -u root \
-  --name relayer \
+  --name relayer-2 \
   -e CONFIG_FILES=/config/agent-config.json \
   --mount type=bind,source=$CONFIG_FILES,target=/config/agent-config.json,readonly \
   --mount type=bind,source=$LAYER_DB_DIR,target=/layer-db \
@@ -15,19 +15,14 @@ docker run \
   ./relayer \
   --db /layer-db \
   --relayChains endurance,arbitrum,base \
-  --defaultSigner.key $RELAYER_KEY \
+  --defaultSigner.key $RELAYER_KEY_2 \
   --log.level info  \
-  --whitelist='[{"senderAddress":"*","destinationDomain":[648,42161,8453],"recipientAddress":"*"}]'
+  --whitelist='[{"senderAddress":"*","destinationDomain":[648,42161,8453],"recipientAddress":"*"}}]'
 
 
 
-
-  --whitelist='[{"senderAddress":"*","destinationDomain":[648,42161,8453],"recipientAddress":["0xBCfB0F338f75F1048dfeAE17333DF0daDC693da2","0xB2Ca7A046eaBF5AeadcB8A2cD9f19295EA2Dc5d5","0x6Ff15F8dECFe909284b8313F348A211431038fCd"]}]'
-
-
-
-docker stop relayer
-docker rm relayer
+docker stop relayer-2
+docker rm relayer-2
 
 docker logs --tail 1 -f relayer | grep -C 2 "sequence_aware::backward"
 
